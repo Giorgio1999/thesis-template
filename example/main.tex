@@ -1,0 +1,24 @@
+\documentclass{book} % <-- this template uses the book class
+%%%%%%%%%%% Include your packages here %%%%%%%%%%%%
+\usepackage{braket} % <-- example package
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\pathtotemplate}{/home/giorgio/thesis-template/src/} % <-- give the path to the src folder, either absolute or relative to this file
+
+\input{\pathtotemplate/thesis-template.tex} % <-- this line includes the template in your project
+\addbibresource{references.bib} % <-- give your .bib file which includes the references, either absolute or relative to this file 
+
+\begin{document}
+
+\thesistitle % <-- this line creates the titlepage
+\thesistoc % <-- this line creates the table of contents
+
+%%%%%%%%%%% Input your chapters here %%%%%%%%%%%%%%%%%%%%
+\input{abstract}
+\input{firstchapter} % <-- input your chapters like this, remeber to clarify the first chapter
+\input{secondchapter}
+\input{acknowledgements}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\printbibliography % <-- lastly print the bibliography
+\end{document}
