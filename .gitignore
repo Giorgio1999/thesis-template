@@ -1,0 +1,11 @@
+example/*.aux
+example/*.bbl*
+example/*.bcf*
+example/*.blg
+example/*.fdb*
+example/*.fls
+example/*.log
+example/*.toc
+example/*.pdf
+example/*.gz
+example/*.xml
