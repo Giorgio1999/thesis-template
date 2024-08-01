@@ -1,7 +1,0 @@
-# Alle Dateien und Verzeichnisse ignorieren
-*
-
-# Ausnahme fpr bestimmte Dateien oder Verzeichnisse
-!*.tex
-!*.bib
-!.gitignore
