@@ -21,19 +21,24 @@
 
 % Head and foot lines
 \usepackage{fancyhdr}
+\newcommand{\true}{true}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and foot
 \renewcommand{\headrulewidth}{\widthofheaderline} % width of header line
 \renewcommand{\footrulewidth}{\widthoffooterline} % width of footer line
-\fancyhead[LE,RO]{\leftmark} % left header: chaptername
+\ifx\headchaptername\true
+	\fancyhead[LE,RO]{\leftmark} % left header: chaptername
+\fi
 \fancyfoot[LE]{\hspace{\pagenumberposition}\thepage} % pagenumber for even pages 
 \fancyfoot[RO]{\thepage\hspace{\pagenumberposition}} % pagenumber for uneven pages
 
 % Chapterpages use style plain, configure in the same way 
 \fancypagestyle{plain}{
 	\fancyhf{}
-	\fancyhead[LE,RO]{\leftmark}
+	\ifx\headchaptername\true
+		\fancyhead[LE,RO]{\leftmark}
+	\fi
 	\fancyfoot[LE]{\hspace{\pagenumberposition}\thepage}
 	\fancyfoot[RO]{\thepage\hspace{\pagenumberposition}}
 }
