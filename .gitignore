@@ -9,3 +9,4 @@ example/*.toc
 example/*.pdf
 example/*.gz
 example/*.xml
+indent.log
